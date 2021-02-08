@@ -1416,7 +1416,7 @@ class _CheckOutPageState extends State<UserContainer> {
     return final_Amount;
   }
 
-  double CalculatePrice(double distance){
+  /*double CalculatePrice(double distance){
     double final_price=0.0;
     double rem_distance=0.0;
     double final_distance=0.0;
@@ -1436,7 +1436,23 @@ class _CheckOutPageState extends State<UserContainer> {
           return final_price;
         }
     }
+  }*/
+
+  double CalculatePrice(double distance){
+    if(distance < 10.0){
+      final_amount=100;
+    }
+    else if(distance >= 10.0 && distance < 20){
+      final_amount=200;
+    }
+
+    else if(distance >= 20.0 && distance < 30){
+      final_amount=300;
+    }
+
+    return final_amount.toDouble();
   }
+
 
   double distancePriceCalculator(double initial_distance,int interval,double price,double final_price){
    if(initial_distance < interval){

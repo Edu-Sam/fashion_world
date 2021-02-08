@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_)=>Categories(name: '',description: ''))
     ],
     child: MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Fashion World',
       theme: ThemeData(
         iconTheme: IconThemeData(color: Color.fromRGBO(214,24,195,1)),
 
@@ -132,6 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return FutureBuilder(
         future: future_categories,
         builder: (context,snapshot){
@@ -347,7 +348,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Center(
                   child: Wrap(
                     children: [
-                      Text('Network error. ' + snapshot.error.toString(),
+                      Text('Network error.Check your internet connection ' ,
                         style: TextStyle(fontWeight: FontWeight.w400,fontSize: 16,color: Color.fromRGBO(214,24,195,1)),)
                     ],
                   )
@@ -443,6 +444,7 @@ Future<List<Categories>> getCategories() async{
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         color: Color.fromRGBO(220, 153, 89, 0.1),
+       // margin: EdgeInsets.symmetric(horizontal: 0.0,vertical: 0.0),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -546,6 +548,7 @@ Future<List<Categories>> getCategories() async{
                                     searchController.text = _searchResult[i].name;
                                     search_name = searchController.text;
                                     future_product = this.fetchProductsLikeName(search_name);
+                                    print('The future set is a new future');
                                   });
                                   //   updateProductUi(i);
                                 },

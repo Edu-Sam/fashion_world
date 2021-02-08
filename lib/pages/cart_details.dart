@@ -173,7 +173,7 @@ class _CartPageState extends State<CartPage> {
                                       .copyWith(color: Color.fromRGBO(214,24,195,1)),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 20.0),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment: CrossAxisAlignment.end,

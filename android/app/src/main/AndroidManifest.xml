@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
    <application
         android:label="fashion_world"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/fashion_world">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

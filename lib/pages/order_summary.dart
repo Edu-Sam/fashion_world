@@ -48,7 +48,7 @@ class PreviousOrderState extends State<PreviousOrders>{
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height * 3/4 ,
                   child: ListView.builder(
-                      itemCount: 2,
+                      itemCount: list_orders.length,
                       itemBuilder: (context,index){
                         return  Padding(
                           padding: const EdgeInsets.symmetric(vertical: 5.0,horizontal: 20.0),
