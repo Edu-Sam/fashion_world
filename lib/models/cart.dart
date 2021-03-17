@@ -8,7 +8,7 @@ class Cart with ChangeNotifier{
   int cart_id;
   int total_amount=0;
   List<CartItemsData> cart_items_data=[];
- // List<CartItemsData> cart_items_data=new List<CartItemsData>();
+
   int cart_size=0;
   Cart({this.cart_id,this.cart_size,this.total_amount,this.cart_items_data});
 

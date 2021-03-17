@@ -321,7 +321,9 @@ class ProductDashBoardItem extends StatelessWidget{
           curve: Curves.linear, duration: Duration(milliseconds: 500));
     }
 
-    showModalBottomSheet(context: context,shape: CircleBorder(),isScrollControlled: true,
+    showModalBottomSheet(context: context,shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top:Radius.circular(20.0))
+    ),isScrollControlled: true,
         builder: (BuildContext context){
       return NotificationListener<ScrollUpdateNotification>(
           onNotification: (ScrollNotification scrollInfo) {
