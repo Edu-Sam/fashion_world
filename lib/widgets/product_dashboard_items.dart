@@ -115,13 +115,13 @@ class ProductDashBoardItem extends StatelessWidget{
 
 
                                   ],
-                                  /*image: DecorationImage(
+                                  image: DecorationImage(
                                       image: NetworkImage(userproducts[index].image),
                                       fit: BoxFit.cover
-                                  )*/
+                                  )
                                 ),
 
-                                child: Column(
+                                child: /*Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.start,
 
@@ -194,7 +194,7 @@ class ProductDashBoardItem extends StatelessWidget{
                                     )
                                     // ShoppingCart()
                                   ],
-                                )/*Stack(
+                                ),*/Stack(
                                 children: [
                                   Positioned.fill(
                                     child: Align(
@@ -253,7 +253,7 @@ class ProductDashBoardItem extends StatelessWidget{
 
 
                                 ],
-                              )*/,
+                              ),
                               ),
                             ),
                           );
